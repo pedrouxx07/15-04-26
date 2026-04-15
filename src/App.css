@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0b0713;
+  color: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVBAR */
+.custom-navbar {
+  background: rgba(10, 8, 18, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  color: #c084fc !important;
+}
+
+.nav-link {
+  color: #e9d5ff !important;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff !important;
+}
+
+/* HERO */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(8, 5, 15, 0.82), rgba(8, 5, 15, 0.92)),
+    radial-gradient(circle at top left, #6d28d9 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #4c1d95 0%, transparent 35%),
+    #0b0713;
+  padding-top: 100px;
+}
+
+.hero-badge {
+  background: rgba(192, 132, 252, 0.15);
+  color: #d8b4fe;
+  border: 1px solid rgba(216, 180, 254, 0.3);
+  padding: 10px 16px;
+  border-radius: 999px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #c084fc, #7c3aed, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-section h1 {
+  color: #fff;
+}
+
+.hero-section p {
+  color: #d1c4e9;
+  max-width: 550px;
+}
+
+.hero-img {
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.35);
+  border: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+/* BOTÕES */
+.btn-main {
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.btn-main:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(168, 85, 247, 0.35);
+  color: white;
+}
+
+.btn-card {
+  background: transparent;
+  border: 1px solid #a855f7;
+  color: #d8b4fe;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-card:hover {
+  background: #a855f7;
+  color: #fff;
+}
+
+/* ARTIGOS */
+.articles-section {
+  background: linear-gradient(to bottom, #0f0a18, #140f22);
+}
+
+.article-card {
+  background: #181123;
+  border: 1px solid rgba(168, 85, 247, 0.14);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.35s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.article-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(124, 58, 237, 0.2);
+}
+
+.article-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.article-card .card-body {
+  padding: 24px;
+}
+
+.article-card .card-title {
+  color: #fff;
+  font-weight: 700;
+}
+
+.article-card .card-text {
+  color: #cabee0;
+  margin-bottom: 20px;
+}
+
+.article-tag {
+  display: inline-block;
+  background: rgba(168, 85, 247, 0.12);
+  color: #d8b4fe;
+  border: 1px solid rgba(216, 180, 254, 0.2);
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* GÊNEROS */
+.genres-section {
+  background: #0d0915;
+}
+
+.genre-box {
+  background: linear-gradient(135deg, #1b1228, #25153b);
+  color: #f3e8ff;
+  padding: 25px 10px;
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+.genre-box:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #7c3aed, #581c87);
+}
+
+/* FOOTER */
+.footer-custom {
+  background: #09060f;
+  color: #cdbfe2;
+}
+
+.footer-custom h5 {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #d8b4fe;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-line {
+  border-color: rgba(255, 255, 255, 0.08);
+  margin: 30px 0 20px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 991px) {
+  .hero-section {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .hero-section p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .article-card img {
+    height: 200px;
+  }
+}
